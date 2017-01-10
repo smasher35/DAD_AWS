@@ -25,7 +25,7 @@ var LoginComponent = (function () {
         var name = JSON.stringify({ password: password });
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json');
-        this.http.post('http://localhost:7777/api/v1/login', body, { headers: headers })
+        this.http.post('http://75.101.190.197:8080/api/v1/login', body, { headers: headers })
             .subscribe(function (response) {
             if (response.ok) {
                 sessionStorage.setItem('_id', response.json().id);

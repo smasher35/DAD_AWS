@@ -14,7 +14,7 @@ var io = require("socket.io-client");
 var WebSocketService = (function () {
     function WebSocketService() {
         if (!this.socket) {
-            this.socket = io("http://localhost:7777");
+            this.socket = io("http://75.101.190.197:8080");
         }
     }
     WebSocketService.prototype.sendChatMessage = function (message) {
