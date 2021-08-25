@@ -3,7 +3,7 @@
 #  $ docker build -t ng-quickstart .
 #  $ docker run -it --rm -p 3000:3000 -p 3001:3001 ng-quickstart
 #
-FROM node:16.5.0-buster-slim
+FROM node:16.6-buster-slim
 
 RUN mkdir -p /quickstart /home/nodejs && \
     groupadd -r nodejs && \
