@@ -3,7 +3,7 @@
 #  $ docker build -t ng-quickstart .
 #  $ docker run -it --rm -p 3000:3000 -p 3001:3001 ng-quickstart
 #
-FROM node:18.20.5-alpine3.20
+FROM node:18.20.7-alpine3.20
 
 RUN mkdir -p /quickstart /home/nodejs && \
     groupadd -r nodejs && \
